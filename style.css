@@ -1,0 +1,230 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+  
+body {
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.desktop {
+    align-items: flex-end;
+    background: url(https://res.cloudinary.com/ifanrcpgh/image/upload/v1567454623/wallpaper.jpg) no-repeat center center fixed;
+    background-size: cover;
+    color: #FFF;
+    display: flex;
+    min-height: 100vh;
+}
+
+.startMenu,
+.buildNumber {
+    position: absolute;
+}
+
+.acrylic {
+    background-color: rgba(36, 36, 36, 0.8);
+    backdrop-filter: blur(24px) saturate(125%);
+}
+
+.taskbar {
+    display: flex;
+    font-size: 16px;
+    justify-content: space-between;
+    height: 40px;
+    width: 100%;
+}
+
+.taskbar img {
+    display: inline-block;
+    max-height: 24px;
+    max-width: 24px;
+}
+
+.start img {
+    height: 16px;
+    width: 16px;
+}
+
+.taskbar p {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.taskbar-content {
+    display: flex;
+}
+
+.taskbar-content > div {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    transition: background-color 140ms;
+}
+
+.taskbar-content > div:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.active {
+    background-color: rgba(255, 255, 255, 0.2) !important;
+}
+
+.taskbar-icon {
+    width: 50px;
+}
+
+.taskbar-text {
+    padding: 0 14px;
+}
+
+.startMenu {
+    border-radius: 6px;
+    bottom: 48px;
+    box-shadow: 0px 2px 18px rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column;
+    left: 8px;
+    max-height: 740px;
+    padding: 28px;
+}
+
+.startMenu-header,
+.startMenu-search {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+.startMenu-header {
+    margin: 12px;
+    margin-top: 0;
+}
+
+.startMenu-profilePic {
+    position: relative;
+    width: 120px;
+}
+
+.startMenu-profilePic > img {
+    border-radius: 50%;
+    box-shadow: 0px 2px 18px rgba(0, 0, 0, 0.3);
+    position: absolute;
+    top: -112px;
+    width: 120px;
+}
+
+.startMenu-option {
+    align-items: center;
+    border-radius: 4px;
+    display: flex;
+    font-size: 18px;
+    height: 40px;
+    justify-content: center;
+    width: 50px;
+}
+
+.startMenu-option:hover {
+    background-color: rgba(120, 120, 120, 0.5);
+}
+
+.startMenu-search {
+    color: #888;
+    position:relative; 
+    margin: 20px 12px;
+}
+
+input[type=text]::placeholder {
+    color: #888;
+}
+
+input[type=text] {
+    background-color: #181818;
+    border: none;
+    border-radius: 4px;
+    box-shadow: 0px 2px 18px rgba(0, 0, 0, 0.3);
+    color: #888;
+    font-family: 'Segoe UI', sans-serif;
+    font-size: 16px;
+    outline: none;
+    padding: 12px 20px;
+    transition: all 140ms;
+    width: 100%;
+}
+
+input[type=text]:focus,
+input[type=text]:hover {
+    box-shadow: 0px 4px 36px rgba(0, 0, 0, 0.4);
+}
+
+input[type=text]:focus {
+    background-color: #fff;
+    color: #181818
+}
+.startMenu-search i {
+    position: absolute;
+    right: 20px;
+}
+
+.app-list {
+    display: grid;
+    grid-template-columns: 100px 100px 100px 100px 100px;
+    grid-row-gap: 20px;
+}
+
+.app-wrapper {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.app-wrapper p {
+    font-size: 14px;
+    margin-top: 4px;
+    overflow: hidden;
+    text-align: center;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 100px;
+}
+
+.app-tile {
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 2px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    height: 64px;
+    justify-content: center;
+    overflow: hidden;
+    transition: all 140ms;
+    width: 64px;
+}
+
+.app-tile:hover {
+    transform: scale(1.16);
+}
+
+.app-tile img {
+    max-height: 32px;
+    max-width: 32px;
+}
+
+.divider {
+    background-color: rgba(255, 255, 255, 0.1);
+    height: 1px;
+    margin: 20px 0;
+    width: 100%;
+}
+
+h1 {
+    font-size: 18px;
+    font-weight: 400;
+    margin: 12px;
+    margin-bottom: 24px;
+}
+
+.fluent-icon {
+    filter: drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.5)); 
+}
